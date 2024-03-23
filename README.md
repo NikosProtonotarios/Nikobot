@@ -1,1 +1,1 @@
-Nikobot is a bot that I programmed to be able to find your age based on three questions.
+Nikobot is a bot that I programmed for coding trainnig reasons.
