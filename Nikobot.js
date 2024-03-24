@@ -13,3 +13,16 @@ let remainder7 = prompt("Enter the number of your age divided by 7");
 let age = (remainder3 * 70 + remainder5 * 21 + remainder7 * 15) % 105;
 
 console.log("Your age is " + age + " that's a good time to start programming!");
+console.log("Now I will prove to you that I can count to any number you want.");
+
+function count(number) {
+    let n = 0
+    while (n <= number) {
+        
+        console.log(n + " !");
+        ++n;
+    } 
+}
+count(10);
+
+console.log("Completed, have a nice day!");
