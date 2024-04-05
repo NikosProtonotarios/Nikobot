@@ -1,21 +1,27 @@
-console.log("Hello! My name is Nikobot.");
-console.log("I was created in 2024.");
+console.log("Hello! My name is Nikobot");
+console.log("I was created in 2024");
 
-let name = prompt("Please, remind me your name.");
 
-console.log("What a great name you have, " + name + "!");
-console.log("Let me guess your age.");
-console.log("Enter remainders of dividing your age by 3, 5 and 7.");
+function remind_name() {
+	let name = prompt("Please, remind me your name.");
+	console.log("What a great name you have, " + name + "!");
+}
 
-let remainder3 = prompt("Enter the number of your age divided by 3");
-let remainder5 = prompt("Enter the number of your age divided by 5");
-let remainder7 = prompt("Enter the number of your age divided by 7");
-let age = (remainder3 * 70 + remainder5 * 21 + remainder7 * 15) % 105;
+function guess_age() {
+	console.log("Let me guess your age.");
+	console.log("Enter remainders of dividing your age by 3, 5 and 7.");
 
-console.log("Your age is " + age + " that's a good time to start programming!");
-console.log("Now I will prove to you that I can count to any number you want.");
+	let rem3 = prompt("by 3");
+	let rem5 = prompt("by 5");
+	let rem7 = prompt("by 7");
 
-function count(number) {
+	let age = (rem3 * 70 + rem5 * 21 + rem7 * 15) % 105;
+
+	console.log("Your age is " + age + "; that's a good time to start programming!");
+}
+
+function count() {
+    let number = prompt("Until which number do I have to count?")
     let n = 0
     while (n <= number) {
         
@@ -23,6 +29,31 @@ function count(number) {
         ++n;
     } 
 }
-count(10);
 
-console.log("Completed, have a nice day!");
+function test() {
+	console.log("Let's test your programming knowledge.");
+    console.log("Why do we use methods?")
+    console.log("1. To repeat a statement multiple times.");
+    console.log("2. To decompose a program into several small subroutines.");
+    console.log("3. To determine the execution time of a program.");
+    console.log("4. To interrupt the execution of a program.");
+}
+
+function end() {
+    while (true) {
+   let ans = prompt("choose the correct answer");
+   if (ans == 2) {
+       console.log("Congratulations, have a nice day!");
+        break;
+   } else {
+       console.log("Please, try again.");
+   }
+        
+   }
+   }
+
+remind_name();
+guess_age();
+count();
+test();
+end();
